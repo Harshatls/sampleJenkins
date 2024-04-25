@@ -12,5 +12,9 @@ from utils.basePage import driver,wait
 
 # object for the imported BasePage class and any method should be called using this object
 basepage = basePage(driver,wait)
-driver.get("www.google.com")
+
 # basepage.wait_and_find_and_click("")
+
+@given(u'Sample')
+def launch_browser(context):
+    driver.get("www.google.com")
