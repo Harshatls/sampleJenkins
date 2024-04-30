@@ -43,7 +43,8 @@ def step_impl(context):
 @given(u'Check whether logo is present or not')
 def step_impl(context):
     try:
-        if basepage.is_element_present(testdata.logoLocator):
+        basepage.wait_and_find(testdata.logoLocator,"xpath")
+        if basepage.is_element_present("xpath",testdata.logoLocator):
             pass
         else:
             raise SystemExit("Logo not present after clicking on PymetrikosUI app")
