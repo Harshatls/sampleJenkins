@@ -116,3 +116,5 @@ class testdata:
     harshaProfileLocator = "//h5[.='Javvaji Harsha Vardhan']"
     docustackLocator = "//td[.='DOCUSTACK']"
     toggleListLocator = "(//input[@data-cy='toggleInput'])"
+
+    logoLocator = "//span[@data-test='sidebar-title']"
