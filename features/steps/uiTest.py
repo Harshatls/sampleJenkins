@@ -43,6 +43,8 @@ def step_impl(context):
 @given(u'Check whether logo is present or not')
 def step_impl(context):
     try:
+        time.sleep(10)
+        time.sleep(10)
         basepage.wait_and_find(testdata.logoLocator,"xpath")
         if basepage.is_element_present("xpath",testdata.logoLocator):
             pass
