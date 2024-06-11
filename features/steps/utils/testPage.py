@@ -3,7 +3,7 @@ class testdata:
     # To be changed later
     # create access to all channels
     usernameFullAccess = 'tls.app@transformative.in'
-    passwordFullAccess = 'Kuh9815598155'
+    passwordFullAccess = 'Kuh98155@14!!'
     # view access 
     usernameAppTest1 = 'apptest1@transformative.in'
     passwordAppTest1 = 'Docu93789'

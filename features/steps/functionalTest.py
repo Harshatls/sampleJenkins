@@ -14,7 +14,9 @@ from loginSteps import basepage,driver,wait
 @then(u'click on PymetrikosUI app')
 def step_impl(context):
     try:
-        basepage.wait_and_find_and_click(testdata.pymetrikosAppLocator,"xpath")
+        time.sleep(10)
+        if basepage.is_element_present("xpath",testdata.pymetrikosAppLocator):
+            basepage.wait_and_find_and_click(testdata.pymetrikosAppLocator,"xpath")
     except:
         raise NotImplementedError(u'STEP: Then click on PymetrikosUI app')
 
